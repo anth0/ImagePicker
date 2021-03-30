@@ -508,7 +508,7 @@ NSString * const GMGridViewCellIdentifier = @"GMGridViewCellIdentifier";
                 
                 NSLog(@"corrected orientation: %ld",(UIImageOrientation)imageToDisplay.imageOrientation);
 
-                if ( ![ UIImageJPEGRepresentation(imageToDisplay, 1.0f ) writeToFile:filePath atomically:YES ] ) {
+                if ( ![ UIImageJPEGRepresentation(imageToDisplay, 0.75f ) writeToFile:filePath atomically:YES ] ) {
                     return;
                 }
                 
